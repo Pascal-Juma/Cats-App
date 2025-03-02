@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cats App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div id="error-message" class="error-container">
+      <p>There was an error. Please try again later</p>
+    </div>
+    <div class="upperSection">
+      <h1 class="title">The Cats App</h1>
+      <div class="facts-fetch">
+        <p class="cats-facts">Number of cats facts(50 maximum)</p>
+        <form class="inputs">
+          <input
+            type="number"
+            id="catsFacts"
+            placeholder="Number of cats facts(50max)"
+            max="50"
+            min="1"
+          />
+          <button type="submit" class="facts-btn">Submit</button>
+        </form>
+      </div>
+      <div class="photos-fetch">
+        <p class="cats-photos">Number of cats photos(10 max)</p>
+        <form class="inputs">
+          <input
+            type="number"
+            id="catsPhotos"
+            name="number"
+            placeholder="Number of cats photos(10max)"
+            max="10"
+            min="1"
+          />
+          <button type="submit" class="photos-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="lowerSection">
+      <div class="randomFacts"><ol></ol></div>
+      <img class="randomPhotos" src="" alt="random cats photos" />
+      <div class="spinner-container" id="spinner">
+        <img src="./public/spinner.gif" alt="Loading..." class="spinner" />
+      </div>
+    </div>
+    <script type="module" src="/src/script.js"></script>
+  </body>
+</html>
